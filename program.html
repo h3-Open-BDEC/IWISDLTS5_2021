@@ -46,9 +46,10 @@
 </tr>
 <tr>
 <th>08:30~08:50</th>
-<td>Takeshi Iwashita (Hokkaido University)<br>
- Title :<br>
- Abstract
+<td>Takeshi Iwashita, Takeshi Fukaya (Hokkaido University)<br>
+ Title : HBMC Ordering for SIMD Vectorization of IC Preconditioning <br>
+ Abstract<br>
+In this talk, we introduce the convergence equivalence condition for parallel orderings in the context of IC(0) preconditioning. Based on the condition, we propose a new parallel ordering method to vectorize and parallelize IC(0) preconditioning, which is called hierarchical block multi-color (HBMC) ordering. The parallel forward and backward substitutions can be vectorized while preserving the advantages of block multi-color ordering, that is, fast convergence and fewer thread synchronizations. Numerical tests were conducted using seven test matrices from the SuiteSparse matrix collection on three types of computational nodes (Intel Xeon Skylake, Broadwell, and Xeon Phi processors). The numerical results indicate that HBMC ordering outperforms the conventional block and nodal multi-color ordering methods. HBMC ordering attains the best result among three parallel ordering methods in 18 out of 21 test cases. 
 </td>
 </tr>
 <tr>
@@ -61,8 +62,11 @@
 <tr>
 <th>09:10~09:50</th>
 <td>Rich Vuduc (Georgia Institute of Technology)<br>
- Title :<br>
- Abstract
+ Title : Smarter algorithms for smarter networks?<br>
+ Abstract<br>
+We consider the emergence of so-called “smart” network interface cards, or smartNICs, for high-performance computing systems, focusing on the class of such platforms where the on-NIC “smarts” are supplied by general-purpose multicore processors (in contrast to ASICs or FPGAs). This class has been rebranded by at least one vendor as that of data processing units, or DPUs. Given DPUs, how should one redesign HPC algorithms and software to exploit them? This talk describes our ongoing work to try to answer this question, using mini-applications from computational science and engineering, including molecular dynamics, adaptive mesh refinement, and communication-avoiding (time-tiled) stencil computations as case studies.
+
+This work is led by Sara Karamati, a Ph.D. student at Georgia Tech, and joint with Jeffrey Young (also GT) and colleagues at Sandia National Laboratories
 </td>
 </tr>
 </table>
@@ -74,15 +78,17 @@
 <tr>
 <th>16:00~16:40</th>
 <td>Kento Sato (RIKEN)<br>
- Title :<br>
- Abstract
+ Title : High Performance Big Data Systems for Extreme-scale Data Science on Fugaku<br>
+ Abstract<br>
+Data science has been recognized as an attractive approach for scientific discovery and has been applied in all kinds of research fields such as computational biology, physics and engineering. These data science applications read large amounts of data, analyze and extract features using data mining methods, and also learn and infer data features and trends using AI techniques. The High Performance Big Data Research Team at RIKEN Center for Computational Science (RIKEN R-CCS) has been researching and developing system software to facilitate such big data processing, machine learning and deep learning for high performance computing (HPC) systems towards convergence of AI/Big Data and HPC. In this talk, Kento Sato introduces several R&D activities for accelerating AI/Big data applications on HPC systems (HPC for AI/Big data) as well as ones for resolving HPC challenges by using these AI/Big data techniques (AI/Big data for HPC).
 </td>
 </tr>
 <tr>
 <th>16:40~17:00</th>
 <td>Takashi Shimokawabe (The University of Tokyo)<br>
- Title :<br>
- Abstract
+ Title : Fast Prediction Method for Approximating Steady Flow Simulations over Multiple Domains<br>
+ Abstract <br>
+Computational fluid dynamics (CFD) is widely used in science and engineering. These kinds of simulations demand a large amount of computational resources and are difficult to run repeatedly under various condition settings. Recently, deep learning has attracted attention as a surrogate method for obtaining calculation results by CFD simulation approximately at high speed. We are developing a parallelization method to make it possible to apply the surrogate method based on the deep learning to large scale geometry. This method predicts large-scale steady flow simulation results by dividing the input geometry into multiple parts and applying a single small neural network to each part in parallel. This method is developed based on considering the characteristics of CFD simulation and the consistency of the boundary condition of each divided subdomain. By using the physical values on the adjacent subdomains as boundary conditions, applying deep learning to each subdomain can predict simulation results consistently in the entire computational domain. As a final goal, we intend to apply this developed parallel method to the surrogate for approximating the 3D blood flow simulation. In this presentation, we will introduce this method and show the predicted results of steady flows by using this method.
 </td>
 </tr>
 <tr>
@@ -95,8 +101,9 @@
 <tr>
 <th>17:20~18:00</th>
 <td>Weichung Wang  (Georgia Institute of Technology)<br>
- Title :<br>
- Abstract
+ Title : Medical Data Analytics and Beyond<br>
+ Abstract<br>
+The rapid development of Artificial Intelligence (AI) introduces a promising new era of smart and precision medicine. Interdisciplinary collaborations play a critical role in the research, education, and productization of medical AI. We will illustrate how the "Medical Data Analytics Framework" may achieve the end-to-end R&D life-cycle. The framework includes project design, multimodality data, intelligent analytics, medical workflows, regulation and ethics, and solution landing. We will also demonstrate examples of how medical AI algorithms and tools can reduce physicians' loading and improve patient outcomes.
 </td>
 </tr>
 </table>
@@ -107,15 +114,19 @@
   Adaptive precision, AT & Verification (II)</caption>
 <tr>
 <th>08:00~08:40</th>
-<td>Osni Marques (Lawrence Berkeley National Laboratory)<br>
- Title :<br>
- Abstract
+<td>Osni Marques Doru Thom Popovici, Mauro Del Ben and Andrew Canning (Lawrence Berkeley National Laboratory)<br>
+ Title : Revisiting Minimization Strategies for Solving Eigenvalue Problems<br>
+ Abstract<br>
+This presentation will discuss ongoing work on unconstrained minimization schemes for the solution of eigenvalue problems. These schemes employ a preconditioned conjugate gradient approach that avoids an explicit reorthogonalization of the trial eigenvectors, in contrast to typical iterative eigenvalue solvers, therefore reducing communications and becoming a potential alternative for the solution of large problems on massively parallel computers. We target problems related to electronic structure calculations. We show results for a set of benchmark systems with an implementation of the unconstrained minimization in first-principles materials and chemistry codes that perform electronic structure calculations based on a density functional theory (DFT) approximation to the solution of the many-body Schrödinger equation. The results show that the unconstrained formulation, together with an appropriate preconditioner, offers good convergence properties and scales well on a large number of cores. We also show results for an implementation in the commonly used plane wave formulation of DFT.
 </tr>
 <tr>
 <th>08:40~09:00</th>
 <td>Takahiro Katagiri (Nagoya University)<br>
- Title :<br>
- Abstract
+ Title : Recent Challenges of Auto-tuning: Accuracy Optimization and Explainable AI <br>
+ Abstract <br>
+Auto-tuning (AT) is one of promising technologies not only to establish exascale computing but also to solve complex tuning procedures. For example, accuracy tuning for computing results has different difficulty to tune execution speed. It requires multiple conditions to optimize it with respect to tuning on speed. To reduce cost of the tuning of accuracy, AT can provide reasonable solutions. On the other hand, AI technologies are widely-used even in facilities based on AT. As same as problem of explainable AI (XAI), explainable AT (XAT) will be one of important issues in very near future. 
+
+With respect to the above background, two topics are folded in this talk. First, we will explain a case of accuracy optimization by AT with a scientific computation from filed of weather-earth simulation. Second, we will demonstrate XAI for parameter tuning on a numerical library from accuracy assurance computations. 
 </td>
 </tr>
 <tr>
@@ -138,23 +149,28 @@
   Integration of (S+D+L) (II)</caption>
 <tr>
 <th>16:00~16:40</th>
-<td>Gerhard Wellein (FAU Erlangen)<br>
- Title :<br>
- Abstract
+<td>Gerhard Wellein (Erlangen National High-Performance Computing Center (NHR@FAU), Germany)<br>
+ Title : The National High-Performance Computing Alliance – advancing the German HPC ecosystem<br>
+ Abstract <br>
+HPC infrastructures provide the backbone for advanced numerical simulation, large scale data analytics or machine learning applications. Rapid technology advances, heterogeneity in hardware or power constraints are only a few developments which require HPC hardware to be seamlessly embedded into an environment of extensive user support, training and expert knowledge in various disciplines. In response to these challenges, Germany has recently established the National High-Performance Computing (NHR) Alliance as a long-term nationwide infrastructure, combining operational, training and research expertise of eight universities. The talk first introduces the NHR Alliance and puts it into the context of the German HPC ecosystem. In the second part, recent results from NHR technology exploration activities for the A64FX architecture are presented, including the ECM performance model for A64FX and a discussion of performance characteristics of two important compute kernels (sparse matrix-vector multiplication and a domain wall kernel from quantum chromodynamics).
 </td>
 </tr>
 <tr>
 <th>16:40~17:00</th>
 <td>Kengo Nakajima (The University of Tokyo)<br>
- Title :<br>
- Abstract
+ Title : Integration of 3D Earthquake Simulation & Real-Time Data Assimilation using h3-Open-BDEC<br>
+ Abstract <br>
+Japan is a country with many natural disasters. In particular, the damage caused by the earthquake is enormous. Over the last 20 years, large earthquakes have occurred in Kobe, Niigata, Tohoku, Kumamoto, etc. Although it is extremely difficult to predict the occurrence of an earthquake, research is currently being actively conducted to minimize damage after an earthquake occurs.  
+
+We have applied the prototype of h3-Open-BDEC to Seism3D/OpenSWPC-DAF (Data-Assimilation-Based Forecast), which was developed by ERI/U.Tokyo for integration of simulation and data assimilation. In this talk, we will describe the demonstration of real-time data assimilation of the developed code on the Oakbridge-CX system at the University of Tokyo, using measured data through JDXnet (Japan Data eXchange network) with 2,000+ high-sensitivity/broadband seismic observation stations in Japan.
 </td>
 </tr>
 <tr>
 <th>17:00~17:20</th>  
-<td>Hiromichi Nagao (The University of Tokyo)<br>
- Title :<br>
- Abstract
+<td>Hiromichi Nagao (Earthquake Research Institute, The University of Tokyo, Japan)<br>
+ Title : Optimization and Uncertainty Quantification based on the Four-Dimensional Variational Method<br>
+ Abstract <br>
+The four-dimensional variational method (4DVar) is one of the data assimilation techniques to integrate numerical simulations and observation data, which especially plays an important role in the cases of large-scale simulation models such as weather forecasting. The conventional 4DVar estimates only the optimum initial conditions and/or parameters for the simulation to fit the data, but never evaluates their uncertainties. We developed a new algorithm for 4DVar that enables us to quantify the uncertainties by the adoption of the second-order adjoint method, which computes the product of a Hessian matrix and an arbitrary given vector without knowing the Hessian matrix. We introduce the foundation of 4DVar and our algorithm for the uncertainty quantification, demonstrating the application results in the cases of the phase-field model that simulates the time-evolution of grain growth in media, and a simple model that simulates seismic wave propagation in the underground.
 </td>
 </tr>
 <tr>
@@ -178,78 +194,19 @@
 
 </section>
 
-<section id="about">
-
-<h2>当テンプレートについて</h2>
-
-<h3>当テンプレートはhtml5+CSS3(レスポンシブWEBデザイン)です</h3>
-<p>当テンプレートは、パソコン、スマホ、タブレットでhtml共通のレスポンシブWEBデザインになっております。<br>
-古いブラウザ（※特にIE8以下）で閲覧した場合にCSSの一部が適用されない（角を丸くする設定など）のでご注意下さい。</p>
-
-<h3>各デバイスごとのレイアウトチェックは</h3>
-<p>最終的なチェックは実際のタブレットやスマホで行うのがおすすめですが、臨時チェックは最新のブラウザ(IEならIE10以降)で行う事もできます。ブラウザの幅を狭くしていくと、各端末サイズに合わせたレイアウトになります。</p>
-
-<h3>各デバイス用のスタイル変更は</h3>
-<p>cssフォルダのstyle.cssファイルで行って下さい。詳しい説明も入っています。<br>
-前半はパソコン環境を含めた全端末の共通設定になります。中盤以降、各端末向けのスタイルが追加設定されています。<br>
-media=&quot; (～)&quot;の「～」部分でcssを切り替えるディスプレイのサイズを設定しています。ここは必要に応じて変更も可能です。</p>
-
-</section>
-
-<section>
-
-<h2>当テンプレートの使い方</h2>
-
-<h3>初心者向けマニュアル公開中</h3>
-<p>テンプレートの編集方法、画像加工、無料サーバーを使ってサイトを公開するなど動画をまじえてわかりやすく解説しています。<br>
-<a href="https://template-party.com/tips/index_beginner.html" target="_blank">初心者向けマニュアルはこちら。</a></p>
-
-<h3>titleタグ、copyright、metaタグ、他の設定</h3>
-<p><strong class="color1">■titleタグの設定はとても重要です。念入りにワードを選んで適切に入力しましょう。</strong><br>
-まず、htmlソースが見れる状態にして、上から６行目あたりにある、<br>
-<span class="look">&lt;title&gt;初心者向けホームページテンプレート tp_beginner5&lt;/title&gt;</span><br>
-を編集しましょう。<br>
-あなたのホームページ名が「SAMPLE SITE」だとすれば、<br>
-<span class="look">&lt;title&gt;SAMPLE SITE&lt;/title&gt;</span><br>
-とすればＯＫです。</p>
-<p><strong class="color1">■copyrightを変更しましょう。</strong><br>
-続いてhtmlの下の方にある、<br>
-<span class="look">Copyright&copy; SAMPLE SITE All Rights Reserved.</span><br>
-の「SAMPLE SITE」部分もあなたのサイト名に変更します。</p>
-<p><strong class="color1">■metaタグを変更しましょう。</strong><br>
-htmlソースが見える状態にしてmetaタグを変更しましょう。</p>
-<p>ソースの上の方に、<br>
-<span class="look">content=&quot;ここにサイト説明を入れます&quot;</span><br>
-という部分がありますので、テキストをサイトの説明文に入れ替えます。検索結果の文面に使われる場合もありますので、見た人が来訪したくなるような説明文を簡潔に書きましょう。</p>
-<p>続いて、その下の行の<br>
-<span class="look">content=&quot;キーワード１,キーワード２,～～～&quot;</span><br>
-も設定します。ここはサイトに関係のあるキーワードを入れる箇所です。10個前後ぐらいあれば充分です。キーワード間はカンマ「,」で区切ります。</p>
-<p><strong class="color1">■ロゴ画像のalt指定と、ロゴ画像本体も変更しましょう。</strong><br>
-html側に<br>
-<span class="look">&lt;img src=&quot;images/logo.png&quot; alt=&quot;SAMPLE SITE&quot;&gt;</span><br>
-となっている箇所があるので、ここのalt指定(SAMPLE SITE)もあなたのサイト名に変更しましょう。</p>
-<p>ロゴ画像本体については、baseフォルダに文字なしの土台画像「logo.png」が入っているので、画像ソフトなど使ってあなたのサイト名を入れて、imagesフォルダに上書きしましょう。<br>
-このロゴ画像、HPで見るサイズよりかなり大きく感じると思いますが、高解像度の端末でピンボケさせない為に適当に大きくしてあります。</p>
-<p>レイアウト上のロゴの大きさは、cssフォルダのstyle.cssの<br>
-<spna class="color1">/*ヘッダー（ロゴが入った最上段のブロック）</spna><br>
-のブロックで設定されている、<br>
-<span class="color1">#logo img</span><br>
-にあるwidthの値で変更可能です。css下の方に小さな端末用の設定がある場合もあるのでそちらも確認して下さい。</p>
-
-<h3>その他、テンプレートのカラーやデザイン変更などは</h3>
-<p>cssフォルダのstyle.cssで行って下さい。詳しい解説も書かれています。<br>
-cssの解説は、「<span class="color1">/*</span>」と「<span class="color1">*/</span>」の間にコメントとして入れています。「<span class="color1">/*</span>」と「<span class="color1">*/</span>」はcss用のコメントタグであり、飾りではないので削除をしないで下さい。もし解説を削除したい場合は、「<span class="color1">/*</span>」と「<span class="color1">*/</span>」含めて丸ごと削除して下さい。</p>
-
-<h3>うまく編集できない場合は</h3>
-<p><a href="https://template-party.com/bbs/">サポート掲示板</a>からご質問下さい。対応可能な範囲内でサポートしております。</p>
-
-</section>
 
 </div>
 <!--/contents-->
 
 <footer>
-<small>Copyright&copy; <a href="index.html">SAMPLE SITE</a> All Rights Reserved.</small>
+<small>
+<strong>Contact e-mail:</strong>h3-open-bdec-all□googlegroups.com<br>
+<strong>Main sponser:</strong>Japan Society for the Promotion of Science (JSPS)<br>
+<strong>Research Theme:</strong><a href="https://h3-open-bdec.cc.u-tokyo.ac.jp/">
+h3-Open-BDEC:An Innovative Method for Integration of Simulation /Data/Learning in the Exascale/Post-Moore Era</a><br>
+<img src="./images/logo_h3-Open-BDEC.jpg" width="300px" alt="h3-Open-BDEC logo"> <br>
+(C) Workshop organized committee </small>
+<!-- Copyright&copy; <a href="index.html">SAMPLE SITE</a> All Rights Reserved.</small> -->
 <span class="pr">《<a href="https://template-party.com/" target="_blank">Web Design:Template-Party</a>》</span>
 </footer>
 
