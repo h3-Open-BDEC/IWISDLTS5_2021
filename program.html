@@ -133,7 +133,8 @@ With respect to the above background, two topics are folded in this talk. First,
 <th>09:00~09:20</th>
 <td>Takeshi Ogita (Tokyo iversity of Tokyo)<br>
  Title :<br>
- Abstract
+  Abstract<br>
+  We are concerned with verified numerical solutions of linear systems arising from 3D Poisson equation with Dirichlet boundary conditions. In numerical computations, we often discretize the equation by the finite difference method or the finite element method and obtain a sparse linear system. Then, coefficient matrices of such linear systems are expected to be monotone, i.e., all elements of the inverse matrix of a coefficient matrix are nonnegative, from the physical condition of the problem. To solve such linear systems, iterative solution methods such as the conjugate gradient (CG) method and its variants are frequently used. Although we usually measure a residual norm for checking the convergence, we do not know the accuracy of numerical solutions. Methods of calculating error bounds of numerical solutions are so-called verification methods. In this talk, we propose a verification method suited for high-performance computing (HPC) environments. For this purpose, we modify several points of an existing verification method in terms of both the quality of the verified error bounds and the speed of the verification process. Some numerical results will be presented. This is a joint work with Prof. Kengo Nakajima.
 </td>
 </tr>
 <tr>
@@ -190,8 +191,9 @@ The four-dimensional variational method (4DVar) is one of the data assimilation 
 <tr>
 <th>17:40~18:00</th>  
 <td>Hiroya Matsuba (The University of Tokyo)<br>
- Title :<br>
- Abstract
+ Title :A Generic TCP/IP and File-based Communication Library for Heterogeneous Parallel Computer<br>
+ Abstract <br>
+ Integration of simulation, data analytics, and machine learning requires communication between different types of parallel computers, such as ones with a massive number of nodes and ones with accelerators. Parallel computers of different types are usually installed as independent systems. MPI handles communication in each system, but it cannot do for communication across the systems. WaitIO is a new communication library that provides a communication infrastructure for applications that utilize multiple parallel computers. While providing similar APIs with MPI, it provides communication functionalities between parallel computers where TCP/IP or shared file systems are only the way of communication. This talk introduces the basic design of WaitIO and reports its performance and scalabilities.
 </td>
 </tr>
 <tr>
