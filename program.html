@@ -114,15 +114,15 @@ The rapid development of Artificial Intelligence (AI) introduces a promising new
   Adaptive precision, AT & Verification (II)</caption>
 <tr>
 <th>08:00~08:40</th>
-<td>Osni Marques Doru Thom Popovici, Mauro Del Ben and Andrew Canning (Lawrence Berkeley National Laboratory)<br>
- Title : Revisiting Minimization Strategies for Solving Eigenvalue Problems<br>
+<td><b>Osni Marques</b>, Doru Thom Popovici, Mauro Del Ben and Andrew Canning (Lawrence Berkeley National Laboratory)<font color="red"><b>INVITED</b></font><br>
+ <b>Title : Revisiting Minimization Strategies for Solving Eigenvalue Problems</b><br><br>
  Abstract<br>
 This presentation will discuss ongoing work on unconstrained minimization schemes for the solution of eigenvalue problems. These schemes employ a preconditioned conjugate gradient approach that avoids an explicit reorthogonalization of the trial eigenvectors, in contrast to typical iterative eigenvalue solvers, therefore reducing communications and becoming a potential alternative for the solution of large problems on massively parallel computers. We target problems related to electronic structure calculations. We show results for a set of benchmark systems with an implementation of the unconstrained minimization in first-principles materials and chemistry codes that perform electronic structure calculations based on a density functional theory (DFT) approximation to the solution of the many-body Schrödinger equation. The results show that the unconstrained formulation, together with an appropriate preconditioner, offers good convergence properties and scales well on a large number of cores. We also show results for an implementation in the commonly used plane wave formulation of DFT.
 </tr>
 <tr>
 <th>08:40~09:00</th>
-<td>Takahiro Katagiri (Nagoya University)<br>
- Title : Recent Challenges of Auto-tuning: Accuracy Optimization and Explainable AI <br>
+<td><b>Takahiro Katagiri</b> (Nagoya University)<br>
+ <b>Title : Recent Challenges of Auto-tuning: Accuracy Optimization and Explainable AI</b><br><br>
  Abstract <br>
 Auto-tuning (AT) is one of promising technologies not only to establish exascale computing but also to solve complex tuning procedures. For example, accuracy tuning for computing results has different difficulty to tune execution speed. It requires multiple conditions to optimize it with respect to tuning on speed. To reduce cost of the tuning of accuracy, AT can provide reasonable solutions. On the other hand, AI technologies are widely-used even in facilities based on AT. As same as problem of explainable AI (XAI), explainable AT (XAT) will be one of important issues in very near future. 
 
@@ -131,8 +131,8 @@ With respect to the above background, two topics are folded in this talk. First,
 </tr>
 <tr>
 <th>09:00~09:20</th>
-<td>Takeshi Ogita (Tokyo iversity of Tokyo)<br>
- Title :<br>
+<td><b>Takeshi Ogita</b> (Tokyo Woman’s Christian University, Japan)<br>
+ <br>Title : Accurately Verified Numerical Solutions of Large Sparse Linear Systems Arising from 3D Poisson Equation</b><br><br>
   Abstract<br>
   We are concerned with verified numerical solutions of linear systems arising from 3D Poisson equation with Dirichlet boundary conditions. In numerical computations, we often discretize the equation by the finite difference method or the finite element method and obtain a sparse linear system. Then, coefficient matrices of such linear systems are expected to be monotone, i.e., all elements of the inverse matrix of a coefficient matrix are nonnegative, from the physical condition of the problem. To solve such linear systems, iterative solution methods such as the conjugate gradient (CG) method and its variants are frequently used. Although we usually measure a residual norm for checking the convergence, we do not know the accuracy of numerical solutions. Methods of calculating error bounds of numerical solutions are so-called verification methods. In this talk, we propose a verification method suited for high-performance computing (HPC) environments. For this purpose, we modify several points of an existing verification method in terms of both the quality of the verified error bounds and the speed of the verification process. Some numerical results will be presented. This is a joint work with Prof. Kengo Nakajima.
 </td>
