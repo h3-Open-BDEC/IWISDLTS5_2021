@@ -54,15 +54,16 @@ In this talk, we introduce the convergence equivalence condition for parallel or
 </tr>
 <tr>
 <th>08:50~09:10</th>
-<td><b>Masatoshi Kawai (The University of Tokyo)</b><br>
+<td><b>Masatoshi Kawai</b> (The University of Tokyo)<br>
  <b>Title : Low/Adaptive Precision Computation in Preconditioned Iterative Solvers for Ill-Conditioned Problems</b><br><br>
- Abstract
+ Abstract<br>
 The usefulness of low/adaptive precision is being discussed mainly in deep learning to reduce computational time and power consumption. In order to use low/adaptive precision in computer simulations, it is also necessary to discuss the impact of decreased computation accuracy. This talk discusses the use of low/adaptive precision on an ICCG iterative method by evaluating an impact on a convergence rate and reducing computational time.
 </td>
 </tr>
 <tr>
-<th>09:10~09:50</th>
-<td><b>Rich Vuduc</b> (Georgia Institute of Technology) <font color="red"><b>INVITED</b></font><br>
+  <th>09:10~09:50</th>
+  <td><font color="red"><b>INVITED TALK</b></font><br>
+ <b>Rich Vuduc</b> (Georgia Institute of Technology)<br>
  <b>Title : Smarter algorithms for smarter networks?</b><br><br>
  Abstract<br>
 We consider the emergence of so-called “smart” network interface cards, or smartNICs, for high-performance computing systems, focusing on the class of such platforms where the on-NIC “smarts” are supplied by general-purpose multicore processors (in contrast to ASICs or FPGAs). This class has been rebranded by at least one vendor as that of data processing units, or DPUs. Given DPUs, how should one redesign HPC algorithms and software to exploit them? This talk describes our ongoing work to try to answer this question, using mini-applications from computational science and engineering, including molecular dynamics, adaptive mesh refinement, and communication-avoiding (time-tiled) stencil computations as case studies.
@@ -94,7 +95,7 @@ Computational fluid dynamics (CFD) is widely used in science and engineering. Th
 </tr>
 <tr>
 <th>17:00~17:20</th>  
-<td><b>Hayato Shiba (The University of Tokyo)</b><br>
+<td><b>Hayato Shiba</b> (The University of Tokyo)</b><br>
  <b>Title : Enhancement of Molecular Dynamics Simulation by Machine Learning</b><br><br>
  Abstract <br>
   Molecular dynamics (MD) is a simulation method wherein the Newton’s equation of motion is solved for all the atomic degrees of freedom. It has enabled  prediction of mechanical and dynamical properties of vast range of molecular assemblies and can treat large-scale systems by parallelization. However, as the time scale that MD simulations are limited by the clock cycle of processors, time scales are typically limited up to the order of 10^10 time steps, which corresponds to microseconds for all-atom potentials.  Development of new methodologies are necessary to overcome this limitation. One long-standing idea is to accelerate the convergence to the target status by enhanced sampling, by using limited number of collective variables of the system.  In this talk, I plan to present a showcase computation assisted by machine learning, taking crystal nucleation phenomena as an example. I will mention also my near-future plan for prediction of dynamical properties of molecular assemblies by using machine learning if time allows
@@ -102,8 +103,10 @@ Computational fluid dynamics (CFD) is widely used in science and engineering. Th
 </tr>
 <tr>
 <th>17:20~18:00</th>
-<td><b>Weichung Wang</b> (Georgia Institute of Technology) <font color="red"><b>INVITED</b></font><br>
- <b><b>Title : Medical Data Analytics and Beyond</b><br><br>
+<td>
+  <font color="red"><b>INVITED TALK</b></font><br>
+  <b>Weichung Wang</b> (Georgia Institute of Technology) <br>
+ <b>Title : Medical Data Analytics and Beyond</b><br><br>
  Abstract<br>
 The rapid development of Artificial Intelligence (AI) introduces a promising new era of smart and precision medicine. Interdisciplinary collaborations play a critical role in the research, education, and productization of medical AI. We will illustrate how the "Medical Data Analytics Framework" may achieve the end-to-end R&D life-cycle. The framework includes project design, multimodality data, intelligent analytics, medical workflows, regulation and ethics, and solution landing. We will also demonstrate examples of how medical AI algorithms and tools can reduce physicians' loading and improve patient outcomes.
 </td>
@@ -116,7 +119,9 @@ The rapid development of Artificial Intelligence (AI) introduces a promising new
   Adaptive precision, AT & Verification (II)</caption>
 <tr>
 <th>08:00~08:40</th>
-<td><b>Osni Marques</b>, Doru Thom Popovici, Mauro Del Ben and Andrew Canning (Lawrence Berkeley National Laboratory)<font color="red"><b>INVITED</b></font><br>
+<td>
+  <font color="red"><b>INVITED TALK</b></font><br>
+  <b>Osni Marques</b>, Doru Thom Popovici, Mauro Del Ben and Andrew Canning (Lawrence Berkeley National Laboratory)<br>
  <b>Title : Revisiting Minimization Strategies for Solving Eigenvalue Problems</b><br><br>
  Abstract<br>
 This presentation will discuss ongoing work on unconstrained minimization schemes for the solution of eigenvalue problems. These schemes employ a preconditioned conjugate gradient approach that avoids an explicit reorthogonalization of the trial eigenvectors, in contrast to typical iterative eigenvalue solvers, therefore reducing communications and becoming a potential alternative for the solution of large problems on massively parallel computers. We target problems related to electronic structure calculations. We show results for a set of benchmark systems with an implementation of the unconstrained minimization in first-principles materials and chemistry codes that perform electronic structure calculations based on a density functional theory (DFT) approximation to the solution of the many-body Schrödinger equation. The results show that the unconstrained formulation, together with an appropriate preconditioner, offers good convergence properties and scales well on a large number of cores. We also show results for an implementation in the commonly used plane wave formulation of DFT.
@@ -159,7 +164,9 @@ With respect to the above background, two topics are folded in this talk. First,
   Integration of (S+D+L) (II)</caption>
 <tr>
 <th>16:00~16:40</th>
-<td><b>Gerhard Wellein</b> (Erlangen National High-Performance Computing Center (NHR@FAU), Germany) <font color="red"><b>INVITED</b></font><br>
+<td>
+  <font color="red"><b>INVITED TALK</b></font><br>
+  <b>Gerhard Wellein</b> (Erlangen National High-Performance Computing Center (NHR@FAU), Germany)<br>
  <b>Title : The National High-Performance Computing Alliance – advancing the German HPC ecosystem</b><br><br>
  Abstract <br>
 HPC infrastructures provide the backbone for advanced numerical simulation, large scale data analytics or machine learning applications. Rapid technology advances, heterogeneity in hardware or power constraints are only a few developments which require HPC hardware to be seamlessly embedded into an environment of extensive user support, training and expert knowledge in various disciplines. In response to these challenges, Germany has recently established the National High-Performance Computing (NHR) Alliance as a long-term nationwide infrastructure, combining operational, training and research expertise of eight universities. The talk first introduces the NHR Alliance and puts it into the context of the German HPC ecosystem. In the second part, recent results from NHR technology exploration activities for the A64FX architecture are presented, including the ECM performance model for A64FX and a discussion of performance characteristics of two important compute kernels (sparse matrix-vector multiplication and a domain wall kernel from quantum chromodynamics).
